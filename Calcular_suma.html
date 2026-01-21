@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suma, Resta y División de dos números</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .content {
+            display: inline-block;
+            text-align: left;
+        }
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .input-container label {
+            width: 150px;
+            margin-right: 10px;
+        }
+        .input-container input[type="text"] {
+            width: 150px;
+        }
+        .button-container {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .button-container input[type="button"] {
+            margin-right: 10px;
+<<<<<<< HEAD
+            padding: 5px 15px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Botón suma */
+        #btnSuma {
+            background-color: red;
+        }
+        #btnSuma:hover {
+            background-color: green;
+        }
+
+        /* Botón resta */
+        #btnResta {
+            background-color: green;
+        }
+        #btnResta:hover {
+            background-color: blue;
+=======
+>>>>>>> parent of b1409e2 (boton colores)
+        }
+
+        /* Botón división */
+        #btnDivision {
+            background-color: pink;
+        }
+        #btnDivision:hover {
+            background-color: darkgreen;
+        }
+
+        #resultado {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <h2>Suma, Resta y División de dos números</h2>
+
+        <form>
+            <div class="input-container">
+                <label for="num1">Primer número:</label>
+                <input type="text" id="num1">
+            </div>
+            <div class="input-container">
+                <label for="num2">Segundo número:</label>
+                <input type="text" id="num2">
+            </div>
+            <div class="button-container">
+<<<<<<< HEAD
+                <input type="button" id="btnSuma" value="Calcular suma" onclick="calcularSuma()">
+                <input type="button" id="btnResta" value="Calcular resta" onclick="calcularResta()">
+                <input type="button" id="btnDivision" value="Calcular división" onclick="calcularDivision()">
+=======
+                <input type="button" value="Calcular suma" onclick="calcularSuma()">
+                <input type="button" value="Calcular resta" onclick="calcularResta()">
+>>>>>>> parent of b1409e2 (boton colores)
+            </div>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+</div>
+
+<script>
+function calcularSuma() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+
+    if (!isNaN(num1) && !isNaN(num2)) {
+        document.getElementById("resultado").innerHTML =
+            "El resultado de la suma es: " + (num1 + num2);
+    } else {
+        document.getElementById("resultado").innerHTML =
+            "Por favor, ingrese dos números válidos.";
+    }
+}
+
+function calcularResta() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+
+    if (!isNaN(num1) && !isNaN(num2)) {
+        document.getElementById("resultado").innerHTML =
+            "El resultado de la resta es: " + (num1 - num2);
+    } else {
+        document.getElementById("resultado").innerHTML =
+            "Por favor, ingrese dos números válidos.";
+    }
+}
+
+</script>
+
+</body>
+</html>
