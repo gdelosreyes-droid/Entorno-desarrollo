@@ -127,6 +127,18 @@ function calcularResta() {
             "Por favor, ingrese dos números válidos.";
     }
 }
+function calcularDivision() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+
+    if (!isNaN(num1) && !isNaN(num2)) {
+        document.getElementById("resultado").innerHTML =
+            "El resultado de la division es: " + (num1 / num2);
+    } else {
+        document.getElementById("resultado").innerHTML =
+            "Por favor, ingrese dos números válidos.";
+    }
+}
 
 </script>
 
